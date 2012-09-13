@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>us.rothmichaels.parents</groupId>
+    <artifactId>testing-parent</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>us.rothmichaels.parents</groupId>
+  <artifactId>testing-parent</artifactId>
+  <version>1.0.0</version>
+  <name>Mega Testing Parent POM</name>
+  <description>POM that provides all unit testing dependencies for all us.rothmichaels projects.</description>
+  <packaging>pom</packaging>
+
+<properties>
+  <hamcrest.core.version>1.3</hamcrest.core.version>
+</properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jmock</groupId>
+      <artifactId>jmock-legacy</artifactId>
+      <version>${jmock.version}</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-core</artifactId>
+      <version>${hamcrest.core.version}</version>
+    </dependency>
+  </dependencies>
+
+</project>

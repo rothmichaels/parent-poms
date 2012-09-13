@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>us.rothmichaels.parents</groupId>
+    <artifactId>ultra-parent</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>us.rothmichaels.parents</groupId>
+  <artifactId>testing-parent</artifactId>
+  <version>1.0.0</version>
+  <name>Testing Parent POM</name>
+  <description>Parent POM that for all us.rothmichaels projects provides junit and jmock .</description>
+  <packaging>pom</packaging>
+
+  <properties>
+    <junit.version>4.10</junit.version>
+    <jmock.version>2.5.1</jmock.version>
+    <reflect.version>1.0.0</reflect.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jmock</groupId>
+      <artifactId>jmock-junit4</artifactId>
+      <version>${jmock.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>us.rothmichaels.reflect</groupId>
+      <artifactId>easy-reflection</artifactId>
+      <version>${reflect.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
