@@ -12,6 +12,14 @@
   <description>Parent POM that for all us.rothmichaels projects provides junit and jmock .</description>
   <packaging>pom</packaging>
 
+  <licenses>
+    <license>
+      <name>Eclipse Public License, v 1.0</name>
+      <url>http://www.eclipse.org/legal/epl-v10.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
   <properties>
     <junit.version>4.10</junit.version>
     <jmock.version>2.5.1</jmock.version>

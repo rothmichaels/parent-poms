@@ -1,6 +1,6 @@
 # us.rothmichaels Maven Parent POMs
 
-This is a colleciton 
+This is a colleciton of parent `pom.xml` files I use for my Java projects.
 
 ## License
 

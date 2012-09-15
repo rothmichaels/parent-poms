@@ -12,9 +12,17 @@
   <description>POM that provides all unit testing dependencies for all us.rothmichaels projects.</description>
   <packaging>pom</packaging>
 
-<properties>
-  <hamcrest.core.version>1.3</hamcrest.core.version>
-</properties>
+  <licenses>
+    <license>
+      <name>Eclipse Public License, v 1.0</name>
+      <url>http://www.eclipse.org/legal/epl-v10.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <properties>
+    <hamcrest.core.version>1.3</hamcrest.core.version>
+  </properties>
 
   <dependencies>
     <dependency>
