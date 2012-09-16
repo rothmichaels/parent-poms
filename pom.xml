@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>us.rothmichaels.parents</groupId>
   <artifactId>super-parent</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.0-SNAPSHOT</version>
   <name>us.rothmichaels Super Parent POM</name>
   <description>Parent POM for all us.rothmichaels projects.</description>
   <packaging>pom</packaging>
@@ -12,7 +12,7 @@
     <p.jdk.source.version>1.6</p.jdk.source.version>
     <p.jdk.target.version>1.6</p.jdk.target.version>
     <p.scm.con>git://github.com/rothmichaels</p.scm.con>
-    <p.scm.dev.con>git@github.com:rothmichaels</p.scm.dev.con>
+    <p.scm.dev.con>ssh://github.com/rothmichaels</p.scm.dev.con>
     <p.scm.url>http://github.com/rothmichaels</p.scm.url>
     <p.license>Eclipse Public License, v 1.0</p.license>
     <p.license.url>http://www.eclipse.org/legal/epl-v10.html</p.license.url>
