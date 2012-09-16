@@ -6,19 +6,10 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>us.rothmichaels.parents</groupId>
-  <artifactId>testing-parent</artifactId>
-  <version>1.0.0</version>
+  <artifactId>mega-testing-parent</artifactId>
   <name>Mega Testing Parent POM</name>
   <description>POM that provides all unit testing dependencies for all us.rothmichaels projects.</description>
   <packaging>pom</packaging>
-
-  <licenses>
-    <license>
-      <name>Eclipse Public License, v 1.0</name>
-      <url>http://www.eclipse.org/legal/epl-v10.html</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
 
   <properties>
     <hamcrest.core.version>1.3</hamcrest.core.version>

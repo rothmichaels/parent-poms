@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>us.rothmichaels.parents</groupId>
+  <artifactId>super-parent</artifactId>
+  <version>1.0.0</version>
+  <name>us.rothmichaels Super Parent POM</name>
+  <description>Parent POM for all us.rothmichaels projects.</description>
+  <packaging>pom</packaging>
+
+  <properties>
+    <p.maven.compiler.version>2.3.2</p.maven.compiler.version>
+    <p.jdk.source.version>1.6</p.jdk.source.version>
+    <p.jdk.target.version>1.6</p.jdk.target.version>
+    <p.scm.con>git://github.com/rothmichaels</p.scm.con>
+    <p.scm.dev.con>git@github.com:rothmichaels</p.scm.dev.con>
+    <p.scm.url>http://github.com/rothmichaels</p.scm.url>
+    <p.license>Eclipse Public License, v 1.0</p.license>
+    <p.license.url>http://www.eclipse.org/legal/epl-v10.html</p.license.url>
+    <p.project.url>http://github.com/rothmichaels/parent-poms</p.project.url>
+  </properties>
+
+  <url>${p.project.url}</url>
+
+  <licenses>
+    <license>
+      <name>${p.license}</name>
+      <url>${p.license.url}</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:${p.scm.con}</connection>
+    <developerConnection>scm:git:${p.scm.dev.con}</developerConnection>
+    <url>${p.scm.url}</url>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>roth</id>
+      <name>Roth Michaels</name>
+      <email>roth@rothmichaels.us</email>
+    </developer>
+  </developers>
+
+  <modules>
+    <module>testing-parent</module>
+    <module>mega-testing-parent</module>
+  </modules>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${p.maven.compiler.version}</version>
+        <configuration>
+          <source>${p.jdk.source.version}</source>
+          <target>${p.jdk.target.version}</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

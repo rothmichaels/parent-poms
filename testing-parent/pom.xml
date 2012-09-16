@@ -1,24 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <groupId>us.rothmichaels.parents</groupId>
-    <artifactId>ultra-parent</artifactId>
+    <artifactId>super-parent</artifactId>
     <version>1.0.0</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>us.rothmichaels.parents</groupId>
   <artifactId>testing-parent</artifactId>
-  <version>1.0.0</version>
   <name>Testing Parent POM</name>
   <description>Parent POM that for all us.rothmichaels projects provides junit and jmock .</description>
   <packaging>pom</packaging>
-
-  <licenses>
-    <license>
-      <name>Eclipse Public License, v 1.0</name>
-      <url>http://www.eclipse.org/legal/epl-v10.html</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
 
   <properties>
     <junit.version>4.10</junit.version>
@@ -41,11 +32,13 @@
       <scope>test</scope>
     </dependency>
 
+<!-- will put this back in later
     <dependency>
       <groupId>us.rothmichaels.reflect</groupId>
       <artifactId>easy-reflection</artifactId>
       <version>${reflect.version}</version>
       <scope>test</scope>
     </dependency>
+-->
   </dependencies>
 </project>
