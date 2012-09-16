@@ -1,4 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+
   <modelVersion>4.0.0</modelVersion>
   <groupId>us.rothmichaels.parents</groupId>
   <artifactId>super-parent</artifactId>
@@ -8,18 +14,15 @@
   <packaging>pom</packaging>
 
   <properties>
-    <p.maven.compiler.version>2.3.2</p.maven.compiler.version>
+    <p.maven.version>2.3.2</p.maven.version>
     <p.jdk.source.version>1.6</p.jdk.source.version>
     <p.jdk.target.version>1.6</p.jdk.target.version>
-    <p.scm.con>git://github.com/rothmichaels</p.scm.con>
-    <p.scm.dev.con>ssh://github.com/rothmichaels</p.scm.dev.con>
-    <p.scm.url>http://github.com/rothmichaels</p.scm.url>
+    <p.git.repo>parent-poms</p.git.repo>
     <p.license>Eclipse Public License, v 1.0</p.license>
     <p.license.url>http://www.eclipse.org/legal/epl-v10.html</p.license.url>
-    <p.project.url>http://github.com/rothmichaels/parent-poms</p.project.url>
   </properties>
 
-  <url>${p.project.url}</url>
+  <url>http://github.com/rothmichaels/${p.git.repo}</url>
 
   <licenses>
     <license>
@@ -30,9 +33,9 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:${p.scm.con}</connection>
-    <developerConnection>scm:git:${p.scm.dev.con}</developerConnection>
-    <url>${p.scm.url}</url>
+    <connection>scm:git:git://git@github.com/rothmichaels/${p.git.repo}.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/rothmichaels/${p.git.repo}.git</developerConnection>
+    <url>http://github.com/rothmichaels/${p.git.repo}</url>
   </scm>
 
   <developers>
@@ -52,13 +55,19 @@
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>${p.maven.compiler.version}</version>
+        <version>${p.maven.version}</version>
         <configuration>
           <source>${p.jdk.source.version}</source>
           <target>${p.jdk.target.version}</target>
         </configuration>
       </plugin>
-    </plugins>
-  </build>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>${p.maven.version}</version>
+      </plugin>
+  </plugins>
+</build>
 
 </project>
