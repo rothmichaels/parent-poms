@@ -15,6 +15,10 @@
 
   <properties>
     <p.maven.version>2.3.2</p.maven.version>
+    <p.maven.javadoc.version>2.8.1</p.maven.javadoc.version>
+    <p.javadoc.stylesheet>new-javadoc-stylesheet.css</p.javadoc.stylesheet>
+    <p.javadoc.scope>protected</p.javadoc.scope>
+    <p.javadoc.includes>us.rothmichaels:*</p.javadoc.includes>
     <p.jdk.source.version>1.6</p.jdk.source.version>
     <p.jdk.target.version>1.6</p.jdk.target.version>
     <p.git.repo>parent-poms</p.git.repo>
@@ -72,7 +76,22 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
       </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>${p.maven.javadoc.version}</version>
+        <configuration>
+          <stylesheetfile>${p.javadoc.stylesheet}</stylesheetfile>
+          <show>${p.javadoc.scope}</show>
+          <includeDependencySources>true</includeDependencySources>
+          <dependencySourceIncludes>
+            <dependencySourceInclude>${p.javadoc.includes}</dependencySourceInclude>
+          </dependencySourceIncludes>
+        </configuration>
+      </plugin>
     </plugins>
+
   </build>
 
 </project>
