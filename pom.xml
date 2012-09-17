@@ -67,7 +67,12 @@
         <artifactId>maven-release-plugin</artifactId>
         <version>${p.maven.version}</version>
       </plugin>
-  </plugins>
-</build>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
