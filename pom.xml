@@ -45,7 +45,7 @@ You must not remove this notice, or any other, from this software.
   <modelVersion>4.0.0</modelVersion>
   <groupId>us.rothmichaels.parents</groupId>
   <artifactId>super-parent</artifactId>
-  <version>1.1.1-SNAPSHOT</version>
+  <version>1.1.1</version>
   <name>us.rothmichaels Super Parent POM</name>
   <description>Parent POM for all us.rothmichaels projects.</description>
   <packaging>pom</packaging>
@@ -78,7 +78,7 @@ You must not remove this notice, or any other, from this software.
     <connection>scm:git:git://git@github.com/rothmichaels/${p.git.repo}.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/rothmichaels/${p.git.repo}.git</developerConnection>
     <url>http://github.com/rothmichaels/${p.git.repo}</url>
-    <tag>HEAD</tag>
+    <tag>super-parent-1.1.1</tag>
   </scm>
 
   <developers>
