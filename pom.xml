@@ -53,6 +53,7 @@ You must not remove this notice, or any other, from this software.
   <properties>
     <p.maven.version>2.3.2</p.maven.version>
     <p.maven.javadoc.version>2.8.1</p.maven.javadoc.version>
+    <p.maven.source.version>2.2</p.maven.source.version>
     <p.gpg.version>1.4</p.gpg.version>
     <p.javadoc.stylesheet>new-javadoc-stylesheet.css</p.javadoc.stylesheet>
     <p.javadoc.scope>protected</p.javadoc.scope>
