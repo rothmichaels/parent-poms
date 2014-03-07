@@ -99,6 +99,7 @@ You must not remove this notice, or any other, from this software.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
         <configuration>
           <source>${p.jdk.source.version}</source>
           <target>${p.jdk.target.version}</target>
@@ -117,6 +118,7 @@ You must not remove this notice, or any other, from this software.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.5</version>
       </plugin>
 
       <plugin>
