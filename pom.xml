@@ -108,6 +108,10 @@ You must not remove this notice, or any other, from this software.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <tagNameFormat>v@{project.version}</tagNameFormat>
+          <pushChanges>false</pushChanges>
+        </configuration>
       </plugin>
 
       <plugin>
