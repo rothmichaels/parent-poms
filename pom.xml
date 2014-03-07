@@ -45,7 +45,7 @@ You must not remove this notice, or any other, from this software.
   <modelVersion>4.0.0</modelVersion>
   <groupId>us.rothmichaels.parents</groupId>
   <artifactId>super-parent</artifactId>
-  <version>1.1.4</version>
+  <version>1.1.5-SNAPSHOT</version>
   <name>us.rothmichaels Super Parent POM</name>
   <description>Parent POM for all us.rothmichaels projects.</description>
   <packaging>pom</packaging>
